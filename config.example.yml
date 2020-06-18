@@ -1,0 +1,23 @@
+---
+# WebGIS information
+webgis:
+  profile: profile_somegis
+  portal_item: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  layer_num: 0
+
+#Agency Information
+agency:
+  name: Some Fire Department
+  phone: (555) 555-5555
+  url: https://somemunicipality.com/burnpermit
+  email: no-reply@somemunicipality.com
+  smtp_server: smtp.someemailservice.com
+  smtp_port: 587
+
+# Google Apps Script API
+gs_pdf_api: https://script.google.com/macros/s/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/exec
+
+# Local timezone
+# Examples: US/Eastern, US/Central, US/Mountain, US/Pacific
+local_tz: US/Eastern
+...
