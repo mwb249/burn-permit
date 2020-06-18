@@ -94,9 +94,15 @@ if __name__ == '__main__':
         # Format Phone Number
         phone = phone_format(bp.attributes['phone'])
 
+        # Remove special characters from name field
+        rm_characters = [';', ':', '!', "*", "'", '"']
+        name = bp.attributes['name']
+        for i in rm_characters:
+            name = name.replace(i, '')
+
         # Set parameters, submit request, receive PDF link
         params = {'address': bp.attributes['address'],
-                  'name': bp.attributes['name'],
+                  'name': name,
                   'phone': phone,
                   'date_issued': creation_date,
                   'acres_yn': bp.attributes['followburncal']}
@@ -105,8 +111,7 @@ if __name__ == '__main__':
         pdf_url = response.content
         pdf_url = str(pdf_url)
 
-        # Set recipient name and email address
-        name = bp.attributes['name']
+        # Set variable for recipient email address
         email = bp.attributes['email']
 
         # Set SMTP session
