@@ -13,6 +13,8 @@ function createDocument(address, name, phone, date_issued, acres_yn) {
   body.replaceText('{name}', name);
   body.replaceText('{phone}', phone);
   body.replaceText('{date_issued}', date_issued);
+  body.replaceText('{date_expire}', date_expire);
+  body.replaceText('{year}', year);
   body.replaceText('{acres_yn}', acres_yn);
   drivedoc.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.EDIT);
 

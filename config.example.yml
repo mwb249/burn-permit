@@ -1,23 +1,28 @@
 ---
 # WebGIS information
 webgis:
-  profile: profile_somegis
-  portal_item: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-  layer_num: 0
+  portal_url:
+  username:
+  password:
+  # If the profile field is used - portal_url, username, and passwords fields are ignored
+  profile:
+  portal_item:
+  layer_num:
 
 #Agency Information
 agency:
-  name: Some Fire Department
-  phone: (555) 555-5555
-  url: https://somemunicipality.com/burnpermit
-  email: no-reply@somemunicipality.com
-  smtp_server: smtp.someemailservice.com
-  smtp_port: 587
+  name:
+  phone:
+  url:
+  email:
+  smtp_password:
+  smtp_server:
+  smtp_port:
 
 # Google Apps Script API
-gs_pdf_api: https://script.google.com/macros/s/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/exec
+gs_pdf_api:
 
 # Local timezone
 # Examples: US/Eastern, US/Central, US/Mountain, US/Pacific
-local_tz: US/Eastern
+local_tz:
 ...
