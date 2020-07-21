@@ -100,9 +100,13 @@ if __name__ == '__main__':
         name = bp.attributes['applicant_name']
         for i in rm_characters:
             name = name.replace(i, '')
+        name.title()
+
+        # Use title Casing on address field
+        address = bp.attributes['site_address'].title()
 
         # Set parameters, submit request, receive PDF link
-        params = {'address': bp.attributes['site_address'],
+        params = {'address': address,
                   'name': name,
                   'phone': phone,
                   'date_issued': issue_date_str,
@@ -145,6 +149,8 @@ if __name__ == '__main__':
         try:
             s.sendmail(agency_email, email, message)
             s.quit()
+            bp.attributes['applicant_name'] = name
+            bp.attributes['site_address'] = address
             bp.attributes['processed'] = 'Yes'
             features_to_update.append(bp)
         except Exception as e:
