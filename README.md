@@ -6,5 +6,9 @@
 ```bash
 cd /usr/local/bin
 sudo git clone https://github.com/mwb249/burn-permit.git
+```
 
+### Create Conda Environment
+```bash
+conda create --file environment.yml
 ```

@@ -145,4 +145,5 @@ dependencies:
 - x86cpu=0.4=py36_1
 - xeus=0.23.2=3
 - zeromq=4.3.2=1
+prefix:
 ...
