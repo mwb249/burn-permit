@@ -6,4 +6,5 @@
 ```bash
 cd /usr/local/bin
 sudo git clone https://github.com/mwb249/burn-permit.git
+
 ```
