@@ -76,7 +76,7 @@ if __name__ == '__main__':
     fl_burnpermit = flc_burnpermit.layers[cfg_webgis['layer_num']]
 
     # Query feature layer, return feature set
-    sql = "PROCESSED <> 'Yes' AND APPLICANT_EMAIL IS NOT NULL"
+    sql = "PROCESSED IS NULL AND APPLICANT_EMAIL IS NOT NULL"
     fset_burnpermit = fl_burnpermit.query(where=sql)
 
     # Empty list for to hold features to update

@@ -1,5 +1,5 @@
-function createDocument(address, name, phone, date_issued, acres_yn) {
-  var TEMPLATE_ID = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+function createDocument(address, name, phone, date_issued, date_expire, year, acres_yn) {
+  var TEMPLATE_ID = '1uLW-QYQrJtUOV80nT_DSNkhAA8tUGAy9Ia7UCBdQwoQ';
   var documentId = DriveApp.getFileById(TEMPLATE_ID).makeCopy().getId();
 
   drivedoc = DriveApp.getFileById(documentId);
@@ -26,7 +26,9 @@ function doGet(e) {
   var name = e.parameter.name;
   var phone = e.parameter.phone;
   var date_issued = e.parameter.date_issued;
+  var date_expire = e.parameter.date_expire;
+  var year = e.parameter.year;
   var acres_yn = e.parameter.acres_yn;
-  var url = createDocument(address, name, phone, date_issued, acres_yn);
+  var url = createDocument(address, name, phone, date_issued, date_expire, year, acres_yn);
   return ContentService.createTextOutput(url);
 }
