@@ -2,10 +2,10 @@
 {expression/expr0}
 ```javascript
 // Google Apps Script ID
-var script_id = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+var deployment_id = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 
 //Construct base URL
-var baseurl = 'https://script.google.com/macros/s/' + script_id + '/exec?';
+var baseurl = 'https://script.google.com/macros/s/' + deployment_id + '/exec?';
 
 // Create variables for issue and expire months (Jan = 0)
 var month_issue = Month($feature.issue_date) + 1;
@@ -20,8 +20,8 @@ var expire_y = Year($feature.expire_date);
 
 // Create parameters variable
 var params = {
-    address: $feature['site_address'],
-    name: $feature['applicant_name'],
+    address: Proper($feature['site_address']),
+    name: Proper($feature['applicant_name']),
     phone: phone_formatted,
     date_issued: issued,
     date_expire: expire_mdy,
@@ -56,7 +56,7 @@ Right($feature.applicant_phone, 4);
 {expression/expr3}
 ```javascript
 // Used in pop-up title
-return Year($feature.expire_date);
+return Text(Year($feature.expire_date));
 ```
 
 ### Expires / Expired
