@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <base target="_top">
+    <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+    <style type="text/css">
+        body {
+            font-family: arial, sans-serif;
+            font-size: small;
+        }
+        table {
+            width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+
+    <table style="border: 3px solid black;">
+        <tbody>
+            <tr>
+                <td style="text-align:center;">
+                    <b style="font-size:180%;">ANYTOWN ANNUAL BURN PERMIT - <?= year_expire ?></b><br>
+                    Business Phone: (555) 555-1212 &bull; Emergency Only: 911 &bull; Email: admin@example.com<br>
+                    <b style="font-size:120%;">LOSS OF PRIVILEGES AND/OR FINES MAY RESULT BY NOT FOLLOWING THE GUIDELINES</b>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <table style="font-size:110%;">
+        <tbody>
+            <tr>
+                <td style="text-align:center; border-right: 1px solid black;"><b><?= address ?></b></td>
+                <td style="text-align:center;"><b>DATE ISSUED: <?= date_issued ?></b></td>
+            </tr>
+            <tr>
+                <td style="text-align:center; border-right: 1px solid black;"><b><?= name ?></b></td>
+                <td style="text-align:center;"><b>DATE EXPIRES: <?= date_expire ?></b></td>
+            </tr>
+            <tr>
+                <td style="text-align:center; border-right: 1px solid black;"><b><?= phone ?></b></td>
+                <td style="text-align:center;"><b>3 Acres or More: <?= acres_yn ?></b></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <table style="border: 2px solid black; font-size:105%;">
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li><b>Open burning is allowed by permit only.</b></li>
+                        <li>Open burning is allowed during the following times:</li>
+                        <ul>
+                            <li><i>Summer Hours - April 1st thru November 30th, 8am to 8pm</i></li>
+                            <li><i>Winter Hours - December 1st thru March 31st, 8am to 6pm</i></li>
+                        </ul>
+                        <li>All fires must be completely extinguished after hours (no smoldering).</li>
+                        <li>Parcels of <b>less than 3 acres must follow the burn date calendar</b> (available on Township website).
+                            Parcels larger than 3 acres may burn any day. <i><b>Regardless of acreage, weather -
+                            particularly wind - should be considered prior to burning to prevent fire spread and
+                            nuisance smoke.</b></i></li>
+                        <li>All materials being burned must be from the site. No materials may be brought to the site
+                            for disposal.</li>
+                        <li>Open burning shall be constantly attended by a person 14 years of age or older until the
+                            fire is extinguished.</li>
+                        <li>A source of extinguishment shall be present and adequate during hours of burning.</li>
+                        <li>No burning shall be permitted within 50' of any structure. Provisions shall be made to
+                            prevent the fire from spreading.</li>
+                        <li>No burning along roadways.</li>
+                        <li>No flammable liquids shall be permitted to ignite the fire (i.e. gasoline, kerosene, starter
+                            fluid, etc.).</li>
+                        <li>No burning shall be allowed on construction sites.</li>
+                        <li>The size of the pile to be burned shall be no larger than 6' diameter.</li>
+                        <li>Burning violations may be subject to fines in accordance to Civil Infraction Penalty, and
+                            privileges revoked.</li>
+                    </ul>
+
+                    <p style="text-align:center; font-size:105%;"><b>Acceptable Burn Items: Dry Leaves, Paper, Brush, and Wood scraps.<br>
+                        <i>(NO LEAF BURNING IN THE CITY OF THE ANYTOWN)</i><br>
+                        ALL OTHER ITEMS PROHIBITED</b></p>
+                    <p style="text-align:center;">Please visit <b>https://example.com/burnpermit</b> for further information.</p>
+                    <p style="text-align:center; font-size:105%;"><b>The Anytown Fire Department has the right to extinguish any fire deemed by Fire Department<br>
+                        personnel to be a hazard or nuisance.</b></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <table>
+        <tbody>
+            <tr>
+                <td style="text-align:center;">
+                    <img src="https://www.arcgis.com/sharing/rest/content/items/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/data"
+                    alt="Anytown Fire Department logo" width="100" height="100">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-size:105%;">
+                    Anytown Fire Department<br>
+                    1234 Anystreet Dr<br>
+                    Anytown, NY 23456
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

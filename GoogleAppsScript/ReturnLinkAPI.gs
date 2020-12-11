@@ -1,5 +1,5 @@
 function createDocument(address, name, phone, date_issued, date_expire, year, acres_yn) {
-  var TEMPLATE_ID = '1uLW-QYQrJtUOV80nT_DSNkhAA8tUGAy9Ia7UCBdQwoQ';
+  var TEMPLATE_ID = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
   var documentId = DriveApp.getFileById(TEMPLATE_ID).makeCopy().getId();
 
   drivedoc = DriveApp.getFileById(documentId);

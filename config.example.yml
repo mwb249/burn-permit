@@ -19,7 +19,7 @@ agency:
   smtp_server:
   smtp_port:
 
-# Google Apps Script API
+# GoogleAppsScript API
 gs_pdf_api:
 
 # Local timezone

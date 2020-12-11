@@ -1,6 +1,6 @@
 """
 The send_email module connects to a Web GIS, queries for unprocessed records in the specified burn permit feature
-service, then processes those records by calling a Google Apps Script to generate a burn permit. A link to the burn
+service, then processes those records by calling a GoogleAppsScript to generate a burn permit. A link to the burn
 permit document is then emailed to the applicant. Finally it updates the feature service to indicate the record has
 been processed. This module is meant to run as a stand-alone script at an interval of choice.
 """
