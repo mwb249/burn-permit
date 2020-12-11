@@ -1,7 +1,7 @@
 ### Permit - Print Request
 {expression/expr0}
 ```javascript
-// Google Apps Script ID
+// Google Apps Script - Deployment ID
 var deployment_id = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 
 //Construct base URL
